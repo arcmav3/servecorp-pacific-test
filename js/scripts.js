@@ -13,6 +13,7 @@ async function loadComponent(id, file) {
 
 async function init() {
   await loadComponent("header", "header.html");
+  await loadComponent("footer", "footer.html");
 
   var toggle = document.getElementById("menuToggle");
   var closeBtn = document.getElementById("navClose");
@@ -20,14 +21,19 @@ async function init() {
 
   function openMenu() {
     overlay.classList.add("active");
+    toggle.setAttribute("aria-expanded", "true");
   }
 
   function closeMenu() {
     overlay.classList.remove("active");
+    toggle.setAttribute("aria-expanded", "false");
   }
 
-  toggle.addEventListener("click", openMenu);
-  closeBtn.addEventListener("click", closeMenu);
+  if (toggle) toggle.addEventListener("click", openMenu);
+  if (closeBtn) closeBtn.addEventListener("click", closeMenu);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+  });
 }
 
 init();

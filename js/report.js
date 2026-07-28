@@ -21,6 +21,8 @@ function formatValue(value) {
       name: brand.brand_name,
       qty: 0,
       sales: 0,
+      bestProduct: "",
+      bestQty:0,
     };
   });
 
@@ -49,7 +51,7 @@ function formatValue(value) {
     tbody.innerHTML += `
       <tr>
         <td>${brand.name}</td>
-        <td>${brand.qty}</td>
+        <td>${brand.bestProduct}</td><td>${brand.qty}</td>
         <td>$${formatValue(brand.sales)}</td>
       </tr>
     `;
