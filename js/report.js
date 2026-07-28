@@ -32,10 +32,18 @@ function getBestSellingProducts(data, startDate = null, endDate = null) {
     });
 
     // Find the best-selling product
-    const bestSeller = productSales.reduce(
-      (best, current) => (current.totalQty > best.totalQty ? current : best),
-      productSales[0],
-    );
+    const bestSeller = productSales.reduce((best, current) => {
+      if (current.totalQty > best.totalQty) {
+        return current;
+      }
+
+      if (current.totalQty < best.totalQty) {
+        return best;
+      }
+
+      // Tie-breaker: higher-priced product wins
+      return current.price > best.price ? current : best;
+    }, productSales[0]);
 
     return {
       brand_name: brand.brand_name,
@@ -58,7 +66,6 @@ function getBestSellingProducts(data, startDate = null, endDate = null) {
   const products = {};
 
   const bestSellers = getBestSellingProducts(data);
-  console.log(bestSellers);
 
   data.brands.forEach((brand) => {
     brands[brand.brand_ID] = {
@@ -90,8 +97,6 @@ function getBestSellingProducts(data, startDate = null, endDate = null) {
 
   // Build HTML
   tbody.innerHTML = "";
-
-  console.log(brands);
 
   Object.values(brands).forEach((brand) => {
     tbody.innerHTML += `
