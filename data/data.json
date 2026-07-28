@@ -1,0 +1,240 @@
+{
+  "brands": [
+    {
+      "brand_ID": 1,
+      "brand_name": "Apple"
+    },
+    {
+      "brand_ID": 2,
+      "brand_name": "Samsung"
+    },
+    {
+      "brand_ID": 3,
+      "brand_name": "Sony"
+    },
+    {
+      "brand_ID": 4,
+      "brand_name": "Dell"
+    }
+  ],
+  "products": [
+    {
+      "product_ID": 1,
+      "brand_ID": 1,
+      "prod_name": "iPhone 15",
+      "price": 999.0
+    },
+    {
+      "product_ID": 2,
+      "brand_ID": 1,
+      "prod_name": "MacBook Air",
+      "price": 1299.0
+    },
+    {
+      "product_ID": 3,
+      "brand_ID": 1,
+      "prod_name": "AirPods Pro",
+      "price": 249.0
+    },
+    {
+      "product_ID": 4,
+      "brand_ID": 2,
+      "prod_name": "Galaxy S24",
+      "price": 899.0
+    },
+    {
+      "product_ID": 5,
+      "brand_ID": 2,
+      "prod_name": "Galaxy Tab S9",
+      "price": 799.0
+    },
+    {
+      "product_ID": 6,
+      "brand_ID": 2,
+      "prod_name": "Galaxy Buds",
+      "price": 149.0
+    },
+    {
+      "product_ID": 7,
+      "brand_ID": 3,
+      "prod_name": "PlayStation 5",
+      "price": 499.0
+    },
+    {
+      "product_ID": 8,
+      "brand_ID": 3,
+      "prod_name": "Sony WH-1000XM5",
+      "price": 399.0
+    },
+    {
+      "product_ID": 9,
+      "brand_ID": 3,
+      "prod_name": "Bravia TV",
+      "price": 1499.0
+    },
+    {
+      "product_ID": 10,
+      "brand_ID": 4,
+      "prod_name": "XPS 13",
+      "price": 1199.0
+    },
+    {
+      "product_ID": 11,
+      "brand_ID": 4,
+      "prod_name": "Alienware M18",
+      "price": 2499.0
+    },
+    {
+      "product_ID": 12,
+      "brand_ID": 4,
+      "prod_name": "Dell Monitor",
+      "price": 299.0
+    }
+  ],
+  "saleItems": [
+    {
+      "saleItem_ID": 1,
+      "product_ID": 1,
+      "date": "2026-01-02",
+      "qty": 10
+    },
+    {
+      "saleItem_ID": 2,
+      "product_ID": 1,
+      "date": "2026-01-10",
+      "qty": 5
+    },
+    {
+      "saleItem_ID": 3,
+      "product_ID": 2,
+      "date": "2026-01-04",
+      "qty": 3
+    },
+    {
+      "saleItem_ID": 4,
+      "product_ID": 2,
+      "date": "2026-01-15",
+      "qty": 4
+    },
+    {
+      "saleItem_ID": 5,
+      "product_ID": 3,
+      "date": "2026-01-05",
+      "qty": 20
+    },
+    {
+      "saleItem_ID": 6,
+      "product_ID": 3,
+      "date": "2026-01-20",
+      "qty": 15
+    },
+    {
+      "saleItem_ID": 7,
+      "product_ID": 4,
+      "date": "2026-01-03",
+      "qty": 8
+    },
+    {
+      "saleItem_ID": 8,
+      "product_ID": 4,
+      "date": "2026-01-12",
+      "qty": 6
+    },
+    {
+      "saleItem_ID": 9,
+      "product_ID": 5,
+      "date": "2026-01-07",
+      "qty": 4
+    },
+    {
+      "saleItem_ID": 10,
+      "product_ID": 5,
+      "date": "2026-01-18",
+      "qty": 5
+    },
+    {
+      "saleItem_ID": 11,
+      "product_ID": 6,
+      "date": "2026-01-09",
+      "qty": 30
+    },
+    {
+      "saleItem_ID": 12,
+      "product_ID": 6,
+      "date": "2026-01-22",
+      "qty": 25
+    },
+    {
+      "saleItem_ID": 13,
+      "product_ID": 7,
+      "date": "2026-01-02",
+      "qty": 12
+    },
+    {
+      "saleItem_ID": 14,
+      "product_ID": 7,
+      "date": "2026-01-13",
+      "qty": 10
+    },
+    {
+      "saleItem_ID": 15,
+      "product_ID": 8,
+      "date": "2026-01-06",
+      "qty": 14
+    },
+    {
+      "saleItem_ID": 16,
+      "product_ID": 8,
+      "date": "2026-01-16",
+      "qty": 9
+    },
+    {
+      "saleItem_ID": 17,
+      "product_ID": 9,
+      "date": "2026-01-08",
+      "qty": 2
+    },
+    {
+      "saleItem_ID": 18,
+      "product_ID": 9,
+      "date": "2026-01-25",
+      "qty": 3
+    },
+    {
+      "saleItem_ID": 19,
+      "product_ID": 10,
+      "date": "2026-01-03",
+      "qty": 5
+    },
+    {
+      "saleItem_ID": 20,
+      "product_ID": 10,
+      "date": "2026-01-18",
+      "qty": 4
+    },
+    {
+      "saleItem_ID": 21,
+      "product_ID": 11,
+      "date": "2026-01-11",
+      "qty": 2
+    },
+    {
+      "saleItem_ID": 22,
+      "product_ID": 11,
+      "date": "2026-01-23",
+      "qty": 1
+    },
+    {
+      "saleItem_ID": 23,
+      "product_ID": 12,
+      "date": "2026-01-06",
+      "qty": 18
+    },
+    {
+      "saleItem_ID": 24,
+      "product_ID": 12,
+      "date": "2026-01-19",
+      "qty": 12
+    }
+  ]
+}

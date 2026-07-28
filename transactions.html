@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h2>Transactions</h2>
+        <div class="filterbox">
+            <form class="filters" id="filterForm">
+
+                <input type="date" id="from">
+                <input type="date" id="to">
+                <!--input id="keyword" type="number" placeholder="Product ID"-->
+                <select id="productSelect">
+                    <option>Select Product</option>
+                </select>
+
+                <button type="button" id="filterReset">Reset</button>
+            </form>
+            <div class="resultbox">
+                Result: <span id="result">0</span>
+            </div>
+        </div>
+        <div id="loader" class="loader">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Date</th>
+                    <th>Qty</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        <div id="cards" class="mobile"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/transactions.js"></script>
+</body>
+
+</html>
